@@ -1,0 +1,11 @@
+URL shortener requirement (mandatory use case):
+
+Build a scalable URL shortener service with APIs, persistence, and analytics.
+
+Acceptance criteria:
+- Create a short code for a long URL via a REST API (optionally a custom alias).
+- Redirect from the short code to the original URL (HTTP 302).
+- Persist mappings durably across restarts.
+- Track each click (timestamp, referrer, user-agent) and expose aggregated analytics.
+- Keep redirects fast under read-heavy load (caching on the hot path).
+- Ship with unit + integration tests and runnable API documentation.
